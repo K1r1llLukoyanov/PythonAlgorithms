@@ -1,7 +1,8 @@
 def func(x):
     return x ** 2 - 4 * x + 3
 
-def bisection(a, b, e): # [a;b] - interval of root, e - precision
+
+def bisection(a, b, e):  # [a;b] - interval of root, e - precision
     if func(a)*func(b) > 0:
         print('func(a) and func(b) values must be with different sign')
         exit(1)
@@ -16,8 +17,10 @@ def bisection(a, b, e): # [a;b] - interval of root, e - precision
         else:
             a = m+1
 
+
 def main():
     print(bisection(2, 4, 0.001))
+
 
 if __name__ == "__main__":
     main()
